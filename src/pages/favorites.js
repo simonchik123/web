@@ -1,6 +1,4 @@
 import React, {useEffect} from 'react';
-import Header from '../component/header';
-import Navigation from '../component/navigation';
 
 const Favorites = ()=>{
     useEffect(()=>{
@@ -8,9 +6,7 @@ const Favorites = ()=>{
     });
 
     return(
-        <div>
-            <Header/>
-            <Navigation/>
+        <div>            
             <p> Это любимые статьи</p>
         </div>
     )

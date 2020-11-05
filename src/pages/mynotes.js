@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
-import Header from '../component/header';
-import Navigation from '../component/navigation';
+
 
 const myNotes = ()=>{
     useEffect(()=>{
@@ -8,9 +7,7 @@ const myNotes = ()=>{
     });
 
     return(
-        <div>
-            <Header/>
-            <Navigation/>
+        <div>            
             <p> Это мои статьи</p>
         </div>
     )

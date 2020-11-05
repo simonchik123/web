@@ -1,12 +1,12 @@
-import React from 'react';
-import Header from '../component/header';
-import Navigation from '../component/navigation';
+import React, {useEffect} from 'react';
 
 const Home = ()=>{
+    useEffect(()=>{
+        document.title = 'Notedly';
+    });
+
     return(
-        <div>
-            <Header/>
-            <Navigation/>
+        <div>            
             <p>Это домашняя страница</p>
         </div>
     )
