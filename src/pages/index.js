@@ -12,6 +12,7 @@ import Favorites from './favorites';
 const Pages = ()=>{
     return(
         <Router>
+            {/* Wrap our routes within the Layout component */}
             <Layout>
                 <Route exact path='/' component={Home}/>
                 <Route path='/mynotes' component={myNotes}/>

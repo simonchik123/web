@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import Button from '../component/button';
 
 const Home = ()=>{
     useEffect(()=>{
@@ -8,6 +9,7 @@ const Home = ()=>{
     return(
         <div>            
             <p>Это домашняя страница</p>
+            <Button>Кликни меня!</Button>
         </div>
     )
 }
