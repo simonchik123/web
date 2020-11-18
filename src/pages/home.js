@@ -27,6 +27,9 @@ const GET_NOTES = gql`
 
 const Home = ()=>{
     // query hook
+    useEffect(()=>{
+        document.title = 'Notedly';
+    });
     const { data, loading, error, fetchMore } = useQuery(GET_NOTES);
     // if the data is loading, display a loading message
     if (loading) return <p>Loading...</p>;
@@ -34,11 +37,7 @@ const Home = ()=>{
 
     if (error) return <p>Error!</p>;
     // if the data is successful, display the data in our UI
-
-    useEffect(()=>{
-        document.title = 'Notedly';
-    });
-
+    
     return(
         <div>            
             {console.log(data)}
