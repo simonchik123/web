@@ -1,8 +1,11 @@
 import React, {useEffect} from 'react';
-import Button from '../component/button';
+
 
 // import the required libraries
 import { useQuery, gql } from '@apollo/client';
+
+//import Button from '../components/Button';
+import NoteFeed from '../component/NoteFeed';
 
 // our GraphQL query, stored as a variable
 const GET_NOTES = gql`
@@ -38,12 +41,7 @@ const Home = ()=>{
     if (error) return <p>Error!</p>;
     // if the data is successful, display the data in our UI
     
-    return(
-        <div>            
-            {console.log(data)}
-            The data loaded!
-        </div>
-    );
+    return <NoteFeed notes={data.noteFeed.notes} />;
 };
 
 export default Home;
